@@ -46,7 +46,7 @@ docker==7.1.0
 docstring_parser==0.16
 docx2txt==0.8
 editor==1.6.6
-embedchain==0.1.121
+embedchain==0.1.123
 executing==2.1.0
 fastapi==0.114.2
 fastavro==1.9.7
