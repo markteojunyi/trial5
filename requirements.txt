@@ -46,7 +46,7 @@ docker==7.1.0
 docstring_parser==0.16
 docx2txt==0.8
 editor==1.6.6
-embedchain==0.1.123
+embedchain==0.1.121
 executing==2.1.0
 fastapi==0.114.2
 fastavro==1.9.7
@@ -125,7 +125,7 @@ langchain-cohere==0.1.9
 langchain-community==0.2.17
 langchain-core==0.3.10
 langchain-experimental==0.0.65
-langchain-openai==0.2.2
+langchain-openai==0.1.9
 langchain-text-splitters==0.3.0
 langsmith==0.1.131
 litellm==1.45.0
@@ -193,7 +193,7 @@ Pygments==2.18.0
 PyJWT==2.9.0
 pylance==0.9.18
 pyparsing==3.1.4
-pypdf==5.0.1
+pypdf==4.3.1
 pyperclip==1.9.0
 PyPika==0.48.9
 pyproject_hooks==1.1.0
