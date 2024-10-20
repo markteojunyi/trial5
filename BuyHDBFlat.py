@@ -21,12 +21,12 @@ with st.spinner('Loading the application, we ask for your patience...'):
     st.write('💰 You can ask about loan options and HDB Flat Eligibility too 💰')
 
     # Step 1: Load the scraped data from the JSON file with a spinner
-    @st.cache_data(show_spinner=False)
+    #@st.cache_data(show_spinner=False)
     def load_scraped_data_cache():
         return load_scraped_data('scraped_data_buyingflat.json')
 
     # Step 2: Prepare documents and set up vector database
-    @st.cache_resource(show_spinner=False)
+    #@st.cache_resource(show_spinner=False)
     def load_vector_db(scraped_data):
         splitted_documents_as_docs = prepare_documents(scraped_data)
         vectordb = setup_vector_db(splitted_documents_as_docs)
