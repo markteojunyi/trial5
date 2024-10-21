@@ -59,7 +59,7 @@ def setup_vector_db(documents):
         documents=documents,  
         embedding=embeddings_model,
         collection_name="naive_splitter",
-        #persist_directory="./vector_db"
+        persist_directory="/vector_db"
     )
     vectordb.persist()
     return vectordb
