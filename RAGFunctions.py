@@ -2,7 +2,7 @@ import json
 import logging
 from helper_function.tokencounting import count_tokens
 from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain_chroma import Chroma
+from langchain_community.vectorstores import Chroma
 from helper_function.Credentials import embeddings_model, llm
 from langchain.chains import LLMChain
 from langchain.schema import Document
@@ -63,7 +63,7 @@ def setup_vector_db(documents):
         documents=documents,  
         embedding=embeddings_model,
         collection_name="naive_splitter",
-        #persist_directory="./vector_db"
+        persist_directory="./vector_db"
     )
     vectordb.persist()
     return vectordb
