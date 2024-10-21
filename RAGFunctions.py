@@ -1,6 +1,5 @@
 import json
 import logging
-import pysqlite3
 from helper_function.tokencounting import count_tokens
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_chroma import Chroma
@@ -9,6 +8,10 @@ from langchain.chains import LLMChain
 from langchain.schema import Document
 from langchain.prompts import PromptTemplate
 from langchain.chains.question_answering import load_qa_chain
+
+__import__('pysqlite3')
+import sys
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 
 # Setup logging
 logging.basicConfig(level=logging.INFO)
