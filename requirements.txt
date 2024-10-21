@@ -48,6 +48,7 @@ docx2txt==0.8
 editor==1.6.6
 embedchain==0.1.121
 executing==2.1.0
+faiss-cpu
 fastapi==0.114.2
 fastavro==1.9.7
 filelock==3.16.0
