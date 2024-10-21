@@ -1,5 +1,6 @@
 import json
 import logging
+import pysqlite3
 from helper_function.tokencounting import count_tokens
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import Chroma
