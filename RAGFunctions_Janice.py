@@ -69,12 +69,12 @@ def prepare_documents(scraped_data):
 def setup_vector_db(documents):
     try:
         # Create a vector store using FAISS
-        vectorstore = FAISS.from_texts(
+        vectordb = FAISS.from_texts(
             [doc.page_content for doc in documents],  # Extract page content from Document objects
             embeddings_model
         )
         logger.info("Vector store successfully created with FAISS.")
-        return vectorstore
+        return vectordb
     except Exception as e:
         logger.error(f"Error creating vector store: {e}")
         return None
