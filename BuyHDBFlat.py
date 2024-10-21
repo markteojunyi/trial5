@@ -1,7 +1,8 @@
 import streamlit as st
 from langchain_community.vectorstores import Chroma
 from helper_function.Credentials import embeddings_model, llm
-from RAGFunctions import prepare_documents, setup_vector_db, get_llm_response_with_prompt, load_scraped_data
+# from RAGFunctions import prepare_documents, setup_vector_db, get_llm_response_with_prompt, load_scraped_data
+from RAGFunctions_Janice import prepare_documents, setup_vector_db, get_llm_response_with_prompt, load_scraped_data
 import hmac
 import openai  
 from helper_function.stpassword import check_password  
