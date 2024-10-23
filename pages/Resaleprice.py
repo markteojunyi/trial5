@@ -1,9 +1,9 @@
 import streamlit as st
 import pandas as pd
-# from helper_function.stpassword import check_password  
+from helper_function.stpassword import check_password  
 
-# if not check_password():  
-#     st.stop()
+if not check_password():  
+    st.stop()
 
 # Show a spinner until the page is fully loaded
 with st.spinner('Loading the application, we ask for your patience...'):
