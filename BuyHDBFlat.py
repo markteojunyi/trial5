@@ -28,9 +28,10 @@ with st.expander("IMPORTANT NOTICE: Click to expand/disclose", expanded=False):
 with st.spinner('Loading the application, we ask for your patience...'):
     
     # Streamlit app title and introduction
-    st.title('🏠 Ask any question related to buying a house with HDB 🏠')
+    st.title('🏠 Ask any policy related questions regarding buying a HDB or EC 🏠')
     st.write('🏘️🏡🏚️ This is applicable to Executive Condos (ECs), new flats, resale flats 🏚️🏡🏘️')
     st.write('💰 You can ask about loan options and HDB Flat Eligibility too 💰')
+    st.write('Examples include: What is the income ceiling to buy an EC/ I am single, can i buy a HDB?')
 
     # Step 1: Load the scraped data from the JSON file with a spinner
     @st.cache_data(show_spinner=False)
