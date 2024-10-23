@@ -24,9 +24,6 @@ with st.expander("IMPORTANT NOTICE: Click to expand/disclose", expanded=False):
     """)
 
 
-# Set Streamlit page configuration
-st.set_page_config(page_title="HDB app", page_icon="🏠")
-
 # Show a spinner until the page is fully loaded
 with st.spinner('Loading the application, we ask for your patience...'):
     
