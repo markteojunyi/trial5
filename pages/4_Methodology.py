@@ -5,11 +5,6 @@ from helper_function.stpassword import check_password
 if not check_password():  
     st.stop()
 
-    import streamlit as st
-
-# Set Streamlit page configuration
-st.set_page_config(page_title="Methodology", page_icon="🔍")
-
 # Set the title of the Streamlit app
 st.title("Methodology")
 
